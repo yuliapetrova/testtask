@@ -1,0 +1,5 @@
+# Gem lock file #
+Gemfile.lock
+
+# IntelliJ complied files #
+.idea/
