@@ -14,5 +14,5 @@ end
 setup
 search_page = SearchPage.new(@driver)
 @driver.action.move_to(search_page.search_input).perform
-search_page.search_input.click
+search_page.search_input.send_keys("test")
 teardown
