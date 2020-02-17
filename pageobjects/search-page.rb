@@ -33,8 +33,7 @@ class SearchPage
   end
 
   def random_freelancer_click
-    
-    @driver.find_element(xpath: "//*[contains(text(),'#{freelancers.first[:title]}')]").click
+    @driver.find_element(xpath: "//span[contains(text(),'#{freelancers.sample[:name]}')]").click
   end
 
   def freelancers

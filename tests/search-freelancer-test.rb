@@ -4,10 +4,10 @@ require_relative '../pageobjects/search-page'
 require_relative '../pageobjects/profile-page'
 require_relative '../utils/browser-helper'
 
-# Loads config file
+# Load config file
 $config = YAML.load_file('config.yml')
 
-# Reads search keyword from config file "config.yml"
+# Read search keyword from config file "config.yml"
 @keyword = $config['keyword']
 
 # Prepare driver for work
@@ -55,6 +55,5 @@ puts "Check whether at least one attribute contains `<keyword>`"
   #   puts "Failed: expected: '#{randomFreelancer[:name]}' actual: '#{profile_page.freelancer_name.text}'"
   # end
 
-  sleep(10)
 
 
