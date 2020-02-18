@@ -8,7 +8,7 @@ class Browser
     @driver.manage.delete_all_cookies
     puts("Maximize browser window")
     @driver.manage.window.maximize
-    # setup default timeout
+    # Setup default timeout
     default_timeout(30)
   end
 
